@@ -7,9 +7,8 @@
 
 
 int main() {
-	char MyTab[TAILLETAB];
-	char nom[20];
-	char prenom[20];
+	char nom[TAILLETAB];
+	char prenom[TAILLETAB];
 	int ch;
 
 	printf("\nRentrez un prenom: ");
@@ -26,7 +25,9 @@ int main() {
 	while ((ch != 'H') & (ch != 'F'));
 
 	_putch(ch);
-	char sexe[20];
+
+	char sexe[TAILLETAB];
+
 	if (ch == 'H') {
 		strcpy(sexe, "Monsieur");
 	}
@@ -34,8 +35,6 @@ int main() {
 		strcpy(sexe, "Madame");
 	}
 	
-	
-
 
 	printf("\n%s %s %s ", sexe, prenom, nom);
 	
